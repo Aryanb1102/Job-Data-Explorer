@@ -1,4 +1,4 @@
-# Parikshak — Job Description Structuring Pipeline
+# Parikshak â€” Job Description Structuring Pipeline
 
 ## Overview
 This take-home assignment for Parikshak converts unstructured public job descriptions into structured, queryable hiring data. It includes a lightweight scraper, a Gemini-powered extraction pipeline, and a minimal Streamlit dashboard for exploration.
@@ -10,12 +10,12 @@ This take-home assignment for Parikshak converts unstructured public job descrip
 - Provides a simple Streamlit UI for filtering and viewing results
 
 ## Project structure
-- `scrape_jobs.py` — fetches raw job descriptions into `raw_jobs.csv`
-- `jd_pipeline.py` — extracts structured data from `raw_jobs.csv` into `structured_jobs.csv`
-- `app.py` — Streamlit dashboard for exploring `structured_jobs.csv`
-- `raw_jobs.csv` — raw scraped job data
-- `structured_jobs.csv` — structured output data
-- `failed_jobs.csv` — rows that failed extraction
+- `scrape_jobs.py` â€” fetches raw job descriptions into `raw_jobs.csv`
+- `jd_pipeline.py` â€” extracts structured data from `raw_jobs.csv` into `structured_jobs.csv`
+- `app.py` â€” Streamlit dashboard for exploring `structured_jobs.csv`
+- `raw_jobs.csv` â€” raw scraped job data
+- `structured_jobs.csv` â€” structured output data
+- `failed_jobs.csv` â€” rows that failed extraction
 
 ## How the pipeline works
 1. **Scrape**: `scrape_jobs.py` hits public ATS APIs and stores raw job text in `raw_jobs.csv`.
@@ -65,12 +65,11 @@ python jd_pipeline.py
 python -m streamlit run app.py
 ```
 
-Streamlit dashboard: <PASTE_LINK_HERE>
 
 ## Output files
-- `raw_jobs.csv` — raw scraped jobs
-- `structured_jobs.csv` — structured extraction output
-- `failed_jobs.csv` — failed extraction attempts with error notes
+- `raw_jobs.csv` â€” raw scraped jobs
+- `structured_jobs.csv` â€” structured extraction output
+- `failed_jobs.csv` â€” failed extraction attempts with error notes
 
 ## Reproducing the results
 1. Run the scraper to regenerate `raw_jobs.csv`.
@@ -94,7 +93,7 @@ Streamlit dashboard: <PASTE_LINK_HERE>
 - Add `.env`, notebook checkpoints, cache files, and virtual environments to `.gitignore`.
 - Review commit history for leaked secrets before pushing.
 
-Loom walkthrough: <PASTE_LINK_HERE>
+Loom walkthrough: https://www.loom.com/share/d8ced325fb254f3aaecfda32ffdf0bd3
 
 ---
 
